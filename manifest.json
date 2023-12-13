@@ -1,0 +1,23 @@
+{
+  "name": "twitter",
+  "author": "monkeyWie",
+  "title": "Twitter",
+  "description": "Twitter media download, support video, gif, image, etc.",
+  "icon": "icon.png",
+  "version": "1.0.0",
+  "homepage": "https://github.com/monkeyWie/gopeed-extension-twitter",
+  "repository": {
+    "url": "https://github.com/monkeyWie/gopeed-extension-twitter"
+  },
+  "scripts": [
+    {
+      "event": "onResolve",
+      "match": {
+        "urls": [
+          "*://twitter.com/*/status/*"
+        ]
+      },
+      "entry": "dist/index.js"
+    }
+  ]
+}
