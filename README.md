@@ -12,6 +12,10 @@ Create task with twitter status url, and click `Download` button, then the media
 
 ![](image/create.gif)
 
+### Config cookie
+
+To download sensitive or nsfw content, need to config cookie, you can refer to [How to get twitter cookie](https://github.com/TobyG74/twitter-downloader?tab=readme-ov-file#how-to-get-cookie).
+
 ## Useful Links
 
 - [How to develop a gopeed extension](https://docs.gopeed.com/dev-extension.html)

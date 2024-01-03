@@ -4,7 +4,10 @@ import { TwitterDL } from 'twitter-downloader';
 // gif: https://twitter.com/JayPlayDota/status/1716726244371579150
 // video: https://twitter.com/bbcchinese/status/1734145541599383880
 gopeed.events.onResolve(async (ctx) => {
-  const resp = await TwitterDL(ctx.req.url);
+  gopeed.logger.debug('cookie', gopeed.settings.cookie);
+  const resp = await TwitterDL(ctx.req.url, {
+    cookie: gopeed.settings.cookie?.trim(),
+  });
   if (resp.status != 'success') {
     throw new MessageError(resp.message);
   }
